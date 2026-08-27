@@ -1,25 +1,62 @@
+import fotoPerfil from "../assets/foto.jpg";
+
 function Hero() {
-    return(
-        <section id="Inicio"
-            className="container text-center py-5">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7XbC34r4AHX0fh4QAkGWCD1X-8f0snzUpBuetFKIMI7laGmfoBe23y_X&s=10"
-                className="rounded-circle mb-4" alt="Foto"></img>
-                <h1 className="display-4 fw-bold">
-                    Hola, Soy Xiomara Villarruel
-                </h1>
-                <h3 className="text-primary">
-                    Desarrolladora Web
-                </h3>
-                <p className="lead mt-3">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <button className="btn btn-primary me-3">
-                    Ver Proyectos
-                </button>
-                <button className="btn btn-outline-dark">
-                    Descargar CV
-                </button>
-            </section> 
+    return (
+        <section id="Inicio" className="hero-pro">
+            <div className="container">
+                <div className="hero-pro__grid">
+
+                    {/* TEXTO */}
+                    <div className="hero-pro__content">
+                        <span className="hero-pro__badge">
+                            DESARROLLADORA WEB
+                        </span>
+
+                        <h1 className="hero-pro__title">
+                            Hola, soy <span>Xiomara Villarruel</span>
+                        </h1>
+
+                        <p className="hero-pro__subtitle">
+                            Construyo experiencias web modernas, rápidas y
+                            funcionales, desde el diseño hasta la implementación.
+                        </p>
+
+                        <div className="hero-pro__actions">
+                            <button className="hero-pro__btn-primary">
+                                Ver Proyectos
+                            </button>
+                            <button className="hero-pro__btn-secondary">
+                                Descargar CV
+                            </button>
+                        </div>
+
+                        <div className="hero-pro__stats">
+                            <div className="hero-pro__stat">
+                                <strong>+20</strong>
+                                <span>Servicios ofrecidos</span>
+                            </div>
+                            <div className="hero-pro__stat">
+                                <strong>100%</strong>
+                                <span>Enfoque a resultados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* FOTO */}
+                    <div className="hero-pro__media">
+                        <div className="hero-pro__glow"></div>
+                        <div className="hero-pro__frame">
+                            <img
+                                src={fotoPerfil}
+                                alt="Xiomara Villarruel"
+                                className="hero-pro__img"
+                            />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     );
 }
 export default Hero;

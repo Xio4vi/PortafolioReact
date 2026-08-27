@@ -89,6 +89,7 @@ const servicios:Servicio[]=[
 ]
 function Cotizador(){
     const [nombre, setNombre] = useState("");
+    const [correo, setCorreo] = useState("");
     const [servicio, setServicio] = useState("Landing Page");
     const [paginas, setPaginas] = useState(1);
 
@@ -121,6 +122,11 @@ function Cotizador(){
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
     e.preventDefault();
+
+    if (!correo.trim()) {
+  alert("Por favor, ingresa tu correo.");
+  return;
+}
 
 
 
@@ -237,6 +243,22 @@ function Cotizador(){
                     />
 
                   </div>
+                  {/* CORREO */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">
+    Tu correo
+  </label>
+
+  <input
+    type="email"
+    className="form-control"
+    placeholder="Ej. correo@ejemplo.com"
+    value={correo}
+    onChange={(e) =>
+      setCorreo(e.target.value)
+    }
+  />
+</div>
 
 
 
@@ -506,17 +528,28 @@ function Cotizador(){
                 </strong>
               </div>
              {cotizacionGenerada && (
-                <div className="alert alert-success mt-4">
-                  <strong>
-                    ¡Cotización generada!
-                  </strong>
-                  <br />
-                  Cliente: {nombre}
-                  <br />
-                  Total estimado: S/{" "}
-                  {total.toLocaleString("es-PE")}
-                </div>
-              )}
+  <div className="alert alert-success mt-4">
+    <strong>¡Cotización generada!</strong>
+    <br />
+    Cliente: {nombre}
+    <br />
+    Correo: {correo}
+    <br />
+    Proyecto: {servicio}
+    <br />
+    Páginas: {paginas}
+    <br />
+    Servicios adicionales:
+    <ul className="mb-0 mt-1">
+      {diseno && <li>✓ Diseño personalizado</li>}
+      {formulario && <li>✓ Formulario de contacto</li>}
+      {whatsapp && <li>✓ Integración con WhatsApp</li>}
+      {hosting && <li>✓ Dominio y Hosting</li>}
+    </ul>
+    Total estimado: S/{" "}
+    {total.toLocaleString("es-PE")}
+  </div>
+)}
             </div>
           </div>
         </div>
