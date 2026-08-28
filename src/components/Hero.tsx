@@ -21,14 +21,14 @@ function Hero() {
                             funcionales, desde el diseño hasta la implementación.
                         </p>
 
-                        <div className="hero-pro__actions">
-                            <button className="hero-pro__btn-primary">
-                                Ver Proyectos
-                            </button>
-                            <button className="hero-pro__btn-secondary">
-                                Descargar CV
-                            </button>
-                        </div>
+                       <div className="hero-pro__actions">
+    <a href="#Projects" className="hero-pro__btn-primary">
+        Ver Proyectos
+    </a>
+    <a href="/cv-xiomara.pdf" download className="hero-pro__btn-secondary">
+        Descargar CV
+    </a>
+</div>
 
                         <div className="hero-pro__stats">
                             <div className="hero-pro__stat">

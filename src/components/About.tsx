@@ -4,7 +4,10 @@ function About() {
             className="container py-5">
                 <h2 className="text-center mb-4">Sobre Mí</h2>
                 <p className="lead">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Soy Xiomara Villarruel, desarrolladora web enfocada en crear soluciones digitales rápidas, funcionales y a la medida de cada
+    cliente. Trabajo con React, TypeScript y tecnologías del stack PHP/MySQL,
+    combinando diseño y buenas prácticas de desarrollo para construir
+    experiencias web modernas de principio a fin.
                 </p>
             </section>
     );

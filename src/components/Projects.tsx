@@ -15,7 +15,7 @@ function Projects(){
     ];
     return(
         <section id="projects"
-        className="contaniner py-5">
+        className="container py-5">
             <h2 className="text-center mb-5">
                 Proyectos
             </h2>
