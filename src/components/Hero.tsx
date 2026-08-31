@@ -6,6 +6,18 @@ function Hero() {
             <div className="container">
                 <div className="hero-pro__grid">
 
+                    {/* FOTO */}
+                    <div className="hero-pro__media">
+                        <div className="hero-pro__glow"></div>
+                        <div className="hero-pro__frame">
+                            <img
+                                src={fotoPerfil}
+                                alt="Xiomara Villarruel"
+                                className="hero-pro__img"
+                            />
+                        </div>
+                    </div>
+
                     {/* TEXTO */}
                     <div className="hero-pro__content">
                         <span className="hero-pro__badge">
@@ -21,14 +33,14 @@ function Hero() {
                             funcionales, desde el diseño hasta la implementación.
                         </p>
 
-                       <div className="hero-pro__actions">
-    <a href="#Projects" className="hero-pro__btn-primary">
-        Ver Proyectos
-    </a>
-    <a href="/cv-xiomara.pdf" download className="hero-pro__btn-secondary">
-        Descargar CV
-    </a>
-</div>
+                        <div className="hero-pro__actions">
+                            <a href="#Projects" className="hero-pro__btn-primary">
+                                Ver Proyectos
+                            </a>
+                            <a href="/cv-xiomara.pdf" download className="hero-pro__btn-secondary">
+                                Descargar CV
+                            </a>
+                        </div>
 
                         <div className="hero-pro__stats">
                             <div className="hero-pro__stat">
@@ -39,18 +51,6 @@ function Hero() {
                                 <strong>100%</strong>
                                 <span>Enfoque a resultados</span>
                             </div>
-                        </div>
-                    </div>
-
-                    {/* FOTO */}
-                    <div className="hero-pro__media">
-                        <div className="hero-pro__glow"></div>
-                        <div className="hero-pro__frame">
-                            <img
-                                src={fotoPerfil}
-                                alt="Xiomara Villarruel"
-                                className="hero-pro__img"
-                            />
                         </div>
                     </div>
 

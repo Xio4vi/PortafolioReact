@@ -2,7 +2,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
       <div className="container">
-        <a href="#" className="navbar-brand fw-bold">
+        <a href="#Inicio" className="navbar-brand fw-bold">
           Xiomara Villarruel
         </a>
       </div>
@@ -27,8 +27,23 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#Projects" className="nav-link">
+              <a href="#projects" className="nav-link">
                 Proyectos
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#cotizador" className="nav-link">
+                Cotizador
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#solicitar" className="nav-link">
+                Solicitar
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#Registro" className="nav-link">
+                Registro
               </a>
             </li>
             <li className="nav-item">

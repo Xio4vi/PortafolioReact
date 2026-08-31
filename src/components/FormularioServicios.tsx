@@ -40,18 +40,30 @@ function FormularioServicios() {
 
 
 
-  const onSubmit = (data: FormularioData) => {
+    const onSubmit = async (data: FormularioData) => {
+    try {
+      const respuesta = await fetch(
+        "https://formsubmit.co/ajax/vixiomara906@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: "Nueva solicitud de proyecto",
+            ...data,
+          }),
+        }
+      );
 
-    console.log("Datos enviados:", data);
+      if (!respuesta.ok) throw new Error("Error al enviar");
 
-
-
-    toast.success("¡Solicitud enviada correctamente!");
-
-
-
-    reset();
-
+      toast.success("¡Solicitud enviada correctamente!");
+      reset();
+    } catch (error) {
+      toast.error("No se pudo enviar la solicitud. Intenta de nuevo.");
+    }
   };
 
 

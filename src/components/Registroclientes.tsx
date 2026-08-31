@@ -19,10 +19,30 @@ function RegistroClientes() {
     mode: "onChange",
   });
 
-  const onSubmit = (data: Cliente) => {
-    console.log("Cliente registrado:", data);
-    toast.success("Cliente registrado correctamente");
-    reset();
+    const onSubmit = async (data: Cliente) => {
+    try {
+      const respuesta = await fetch(
+        "https://formsubmit.co/ajax/vixiomara906@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: "Nuevo registro de cliente",
+            ...data,
+          }),
+        }
+      );
+
+      if (!respuesta.ok) throw new Error("Error al enviar");
+
+      toast.success("Cliente registrado correctamente");
+      reset();
+    } catch (error) {
+      toast.error("No se pudo registrar. Intenta de nuevo.");
+    }
   };
 
   return (
