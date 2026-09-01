@@ -38,8 +38,8 @@ function Hero() {
                                 Ver Proyectos
                             </a>
                          <a
-    href={`${import.meta.env.BASE_URL}CV_Xiomara.pdf`}
-    download="CV_Xiomara.pdf"
+    href={`${import.meta.env.BASE_URL}CV_Xiomara (2).pdf`}
+    download="CV_Xiomara (2).pdf"
     className="hero-pro__btn-secondary"
 >
     Descargar CV
