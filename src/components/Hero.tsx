@@ -34,7 +34,7 @@ function Hero() {
                         </p>
 
                         <div className="hero-pro__actions">
-                            <a href="#Projects" className="hero-pro__btn-primary">
+                            <a href="#projects" className="hero-pro__btn-primary">
                                 Ver Proyectos
                             </a>
                          <a
