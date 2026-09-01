@@ -37,9 +37,9 @@ function Hero() {
                             <a href="#Projects" className="hero-pro__btn-primary">
                                 Ver Proyectos
                             </a>
-                            <a
-    href="/CV_Xiomara.pdf"
-    download="CV_Xiomara.pdf"
+                         <a
+    href={`${import.meta.env.BASE_URL}CV_Xiomara (2).pdf`}
+    download="CV_Xiomara (2).pdf"
     className="hero-pro__btn-secondary"
 >
     Descargar CV
