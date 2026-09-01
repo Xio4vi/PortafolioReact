@@ -1,4 +1,4 @@
-import fotoPerfil from "../assets/foto.jpg";
+import xio from "../assets/xio.png";
 
 function Hero() {
     return (
@@ -11,7 +11,7 @@ function Hero() {
                         <div className="hero-pro__glow"></div>
                         <div className="hero-pro__frame">
                             <img
-                                src={fotoPerfil}
+                                src={xio}
                                 alt="Xiomara Villarruel"
                                 className="hero-pro__img"
                             />
@@ -37,7 +37,7 @@ function Hero() {
                             <a href="#Projects" className="hero-pro__btn-primary">
                                 Ver Proyectos
                             </a>
-                            <a href="/cv-xiomara.pdf" download className="hero-pro__btn-secondary">
+                            <a href="/CV_Xiomara.pdf" download className="hero-pro__btn-secondary">
                                 Descargar CV
                             </a>
                         </div>
